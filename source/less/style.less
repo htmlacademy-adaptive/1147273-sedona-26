@@ -1,32 +1,8 @@
 // Начните писать стили здесь
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/ptsans.woff2") format("woff2");
-  font-display: swap;
-}
-
-// @font-face {
-//   font-family: "PT Sans";
-//   font-style: normal;
-//   src: url("/fonts/ptsansbold.woff2") format("woff2");
-//   font-display: swap;
-// }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 @import "./blocks/main-header.less";
+@import "./blocks/title.less";
 @import "./blocks/advantages.less";
+@import "./blocks/advantages-content.less";
 @import "./blocks/button.less";
 @import "./blocks/catalog-page__body.less";
 @import "./blocks/catalog.less";
@@ -43,3 +19,29 @@
 @import "./blocks/search-hotel.less";
 @import "./blocks/background-img.less";
 
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
