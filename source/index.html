@@ -2,9 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="main-header">
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -31,9 +33,9 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Седона - небольшой городок в аризоне</h1>
-      <div class="company-title">
+      <div class="background-img">
         <img
-          src="/source/img/welcome.svg"
+          src="./img/welcome.svg"
           width="458"
           height="352"
           alt="Добро пожаловать в Седону."
@@ -43,8 +45,8 @@
         <div class="advantages__wrapper">
           <header class="advantages__header">
             <h2 class="visually-hidden">Преимущества Седона</h2>
-            <p class="advantages__slogan">
-              СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
+            <p class="title advantages__slogan">
+              Седона — небольшой городок в аризоне, заслуживающий большего!
             </p>
             <p class="advantages__intro">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -52,11 +54,13 @@
           </header>
           <div class="advantages-content">
             <ul class="advantages-content__list">
-              <li class="advantages-content__item">
-                <h3 class="advantages-content__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-                <p class="advantages-content__description">
-                  СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-                </p>
+              <li class="advantages-content__item advantages-content__item--background">
+                <div class="advantages-content__wrapper">
+                  <h3 class="advantages-content__title--meta-white">НАСТОЯЩИЙ ГОРОДОК</h3>
+                  <p class="advantages-content__description advantages-content__description--meta-white">
+                    СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                  </p>
+                </div>
                 <img
                 src="./img/advantages-sity.jpg"
                 width="800"
@@ -65,53 +69,55 @@
               />
               </li>
               <li class="advantages-content__item">
-                <h4 class="advantages-content__title">Жилье</h4>
+                <h4 class="title advantages-content__title">Жилье</h4>
                 <p class="advantages-content__description">
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
               <li class="advantages-content__item">
-                <h4 class="advantages-content__title">ЕДА</h4>
+                <h4 class="title advantages-content__title">ЕДА</h4>
                 <p class="advantages-content__description">
                   Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
                 </p>
               </li>
               <li class="advantages-content__item">
-                <h4 class="advantages-content__title">СУВЕНИРЫ</h4>
+                <h4 class="title advantages-content__title">СУВЕНИРЫ</h4>
                 <p class="advantages-content__description">
                   Не только китайского, но и местного производства!
                 </p>
               </li>
-              <li class="advantages-content__item">
-                <h3 class="advantages-content__title">ТАМ ЕСТЬ Мост дьявола</h3>
-                <p class="advantages-content__description">
-                  Да, по нему можно пройти! Если вы осмелитесь, конечно
-                </p>
-              </li>
-              <li class="advantages-content__item">
+              <li class="advantages-content__item advantages-content__item--background">
+                <div class="advantages-content__wrapper">
+                  <h3 class="title advantages-content__title advantages-content__title--meta-white">ТАМ ЕСТЬ Мост дьявола</h3>
+                  <p class="advantages-content__description advantages-content__description--meta-white">
+                    Да, по нему можно пройти! Если вы осмелитесь, конечно
+                  </p>
+                </div>
                 <img
                 src="./img/advantages-bridge.jpg"
                 width="800"
                 height="384"
                 alt="Мост дьявола."
               />
-                <h4 class="advantages-content__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h4>
-                <p class="advantages-content__description">
-                  ВСЕ интересные места находятся очень близко
-                </p>
               </li>
-              <li class="advantages-content__item">
-                <h4 class="advantages-content__title">КРАСИВАЯ ДОРОГА</h4>
-                <p class="advantages-content__description">
-                  ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
-                </p>
-              </li>
-              <li class="advantages-content__item">
-                <h4 class="advantages-content__title">МАЛО ТУРИСТОВ</h4>
-                <p class="advantages-content__description">
-                  Большинство едет в гранд каньони толпится там
-                </p>
-              </li>
+                <li class="advantages-content__item advantages-content__item--bridge">
+                  <h4 class="title advantages-content__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h4>
+                  <p class="advantages-content__description">
+                    ВСЕ интересные места находятся очень близко
+                  </p>
+                </li>
+                <li class="advantages-content__item advantages-content__item--bridge">
+                  <h4 class="title advantages-content__title">КРАСИВАЯ ДОРОГА</h4>
+                  <p class="advantages-content__description">
+                    ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                  </p>
+                </li>
+                <li class="advantages-content__item advantages-content__item--bridge">
+                  <h4 class="title advantages-content__title">МАЛО ТУРИСТОВ</h4>
+                  <p class="advantages-content__description">
+                    Большинство едет в гранд каньони толпится там
+                  </p>
+                </li>
             </ul>
           </div>
         </div>
@@ -119,7 +125,7 @@
       <section class="search-hotel">
         <div class="search-hotel__wrapper">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <b class="search-hotel__question"> Заинтересовались? </b>
+          <b class="title search-hotel__question"> Заинтересовались? </b>
           <p class="search-hotel__aside">
             Укажите предполагаемые датыпоездки, и мы покажем вам
             лучшиепредложения гостиниц в седоне
@@ -136,7 +142,7 @@
     <footer class="footer">
       <div class="footer__wripper">
         <div class="footer__hashtag-inner">
-          <b class="footer__hashtag-text">#visitSEDONA</b>
+          <b class="title footer__hashtag-text">#visitSEDONA</b>
         </div>
         <div class="footer__social-inner social">
           <ul class="social__list">
