@@ -2,6 +2,7 @@
 <html class="catalog-page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -22,8 +23,8 @@
             <a href="" class="main-nav__link"> HTML academy </a>
           </li>
         </ul>
-        <a href="" class="main-nav__link">
-          <img src="./img/logo.svg" alt="Логотип компании" />
+        <a href="" class="main-nav__link main-nav__link--center">
+          <img src="./img/logo.svg" width="185" height="96" alt="Логотип компании" />
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -34,9 +35,10 @@
       <h1 class="visually-hidden">Каталог</h1>
       <div class="background-img">
         <img
+        class="background-img__hero"
           src="./img/welcome.svg"
-          width="458"
-          height="352"
+          width="282"
+          height="214"
           alt="Добро пожаловать в Седону."
         />
       </div>
@@ -51,8 +53,9 @@
           </header>
           <div class="catalog__content">
             <ul class="catalog__list">
-              <li class="catalog__item">
+              <li class="catalog__item catalog__item--wide">
                 <img
+                  class="catalog__img"
                   src="./img/people's-spaces.jpg"
                   width="280"
                   height="280"
@@ -64,6 +67,7 @@
               </li>
               <li class="catalog__item">
                 <img
+                  class="catalog__img"
                   src="./img/local-vegetation.jpg"
                   width="280"
                   height="280"
@@ -75,6 +79,7 @@
               </li>
               <li class="catalog__item">
                 <img
+                  class="catalog__img"
                   src="./img/forest-road.jpg"
                   width="280"
                   height="280"
@@ -86,6 +91,7 @@
               </li>
               <li class="catalog__item">
                 <img
+                  class="catalog__img"
                   src="./img/devil's-bridge.jpg"
                   width="280"
                   height="280"

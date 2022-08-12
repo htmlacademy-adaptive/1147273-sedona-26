@@ -2,6 +2,7 @@
 <html class="form-page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -22,8 +23,8 @@
             <a href="" class="main-nav__link"> HTML academy </a>
           </li>
         </ul>
-        <a href="" class="main-nav__link">
-          <img src="./img/logo.svg" alt="Логотип компании" />
+        <a href="" class="main-nav__link main-nav__link--center">
+          <img src="./img/logo.svg" width="185" height="96" alt="Логотип компании" />
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -34,9 +35,10 @@
       <h1 class="visually-hidden">Отзывы</h1>
       <div class="background-img">
         <img
+        class="background-img__hero"
           src="./img/welcome.svg"
-          width="458"
-          height="352"
+          width="282"
+          height="214"
           alt="Добро пожаловать в Седону."
         />
       </div>
@@ -55,40 +57,45 @@
               action="https://echo.htmlacademy.ru/"
               method="get"
             >
-              <b class="title reviews-form__title">Представьтесь:</b>
-              <label
-                class="reviews-form__small reviews-form__small--meta"
-                for="forename"
-                >Имя*:</label
-              >
-              <input
-                class="reviews-form__field"
-                type="text"
-                id="forename"
-                placeholder="Введите ваше имя"
-              />
-              <label
-                class="reviews-form__small reviews-form__small--meta"
-                for="surname"
-                >Фамилия*:</label
-              >
-              <input
-                class="reviews-form__field"
-                type="text"
-                id="surname"
-                placeholder="Введите вашу фамилию"
-              />
-              <label class="reviews-form__small" for="patronymic"
-                >Отчество:</label
-              >
-              <input
-                class="reviews-form__field"
-                type="text"
-                id="patronymic"
-                placeholder="Введите ваше отчество"
-              />
 
-              <b class="title reviews-form__title reviews-form__contact"
+            <div class="reviews-form__container">
+              <div class="reviews-form__inner">
+                <b class="title reviews-form__title">Представьтесь:</b>
+                <label
+                  class="reviews-form__small reviews-form__small--meta"
+                  for="forename"
+                  >Имя*:</label
+                >
+                <input
+                  class="reviews-form__field"
+                  type="text"
+                  id="forename"
+                  placeholder="Введите ваше имя"
+                />
+                <label
+                  class="reviews-form__small reviews-form__small--meta"
+                  for="surname"
+                  >Фамилия*:</label
+                >
+                <input
+                  class="reviews-form__field"
+                  type="text"
+                  id="surname"
+                  placeholder="Введите вашу фамилию"
+                />
+                <label class="reviews-form__small" for="patronymic"
+                  >Отчество:</label
+                >
+                <input
+                  class="reviews-form__field"
+                  type="text"
+                  id="patronymic"
+                  placeholder="Введите ваше отчество"
+                />
+              </div>
+
+              <div class="reviews-form__inner">
+                <b class="title reviews-form__title reviews-form__contact"
                 >Контактная информация:</b
               >
               <label class="reviews-form__small-contact" for="number"
@@ -109,6 +116,8 @@
                 id="mail"
                 placeholder="Введите e-mail"
               />
+              </div>
+            </div>
 
               <fieldset class="reviews-form__fieldset">
                 <legend class="title reviews-form__fieldset-title">
