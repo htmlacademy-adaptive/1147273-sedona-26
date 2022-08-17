@@ -3,6 +3,7 @@
   text-align: center;
   padding-right: 12px;
   padding-left: 12px;
+
 }
 
 .advantages__intro {
@@ -19,6 +20,11 @@
 .advantages__header {
   position: relative;
 
+  @media (min-width: 768px) {
+    width: 520px;
+    margin: 0 auto;
+  }
+
   &::before {
     content: "";
     width: 100%;
@@ -28,5 +34,9 @@
     right: 0;
     left: 0;
     bottom: -33%;
+
+    @media (min-width: 768px) {
+      background: none;
+    }
   }
 }

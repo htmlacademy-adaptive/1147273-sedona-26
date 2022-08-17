@@ -27,12 +27,11 @@
   &--bridge {
     background-color: #eeeeee;
     text-align: center;
-    padding-top: 24px;
-    padding-bottom: 26px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 24px 35px 26px 35px;
 
-
+    @media (min-width: 768px) {
+      padding: 42px 40px 42px 40px;
+    }
     &:not(:last-child) {
       border-bottom: #D6D6D6 solid 1px;
     }
@@ -41,17 +40,58 @@
   &--home {
     background: url(../../img/home.svg) no-repeat 20px 26px;
     padding-top: 26px;
+
+    @media (min-width: 768px) {
+      padding-top: 131px;
+      text-align: center;
+      background-position: center 60px;
+      background-size: 75px;
+    }
   }
 
   &--food {
     background: url(../../img/food.svg) no-repeat 20px 26px;
     padding-top: 26px;
+
+    @media (min-width: 768px) {
+      padding-top: 131px;
+      text-align: center;
+      background-position: center 64px;
+      background-size: 76px;
+    }
   }
 
   &--gift {
     background: url(../../img/gift.svg) no-repeat 20px 26px;
     padding-top: 26px;
     margin-bottom: 56px;
+
+    @media (min-width: 768px) {
+      padding-top: 131px;
+      text-align: center;
+      background-position: center 55px;
+      background-size: 64px;
+    }
+  }
+
+  &--end {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--end-title {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
   }
 }
 
@@ -62,12 +102,20 @@
 .advantages-content__item--gift .advantages-content__title,
 .advantages-content__item--gift .advantages-content__description {
   padding-left: 46px;
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+  }
 }
 
 .advantages-content__item--home .advantages-content__title,
 .advantages-content__item--food .advantages-content__title,
 .advantages-content__item--gift .advantages-content__title {
   margin-top: 8px;
+
+  @media (min-width: 768px) {
+    margin-top: 26px;
+  }
 }
 
 .advantages-content__wrapper {
@@ -145,3 +193,4 @@
     height: 100%;
   }
 }
+
