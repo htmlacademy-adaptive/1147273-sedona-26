@@ -1,4 +1,5 @@
 .footer {
+  font-family: "PT Sans", "Arial", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 28px 80px 22px 80px;
@@ -7,9 +8,31 @@
 .footer__wripper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: 768px) {
     flex-direction: initial;
     justify-content: space-between;
   }
+}
+
+.footer__hashtag-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.footer__copyright-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__copyright-text {
+  margin-right: 12px;
 }
