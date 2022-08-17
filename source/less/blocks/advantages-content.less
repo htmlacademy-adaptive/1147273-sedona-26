@@ -27,6 +27,37 @@
   &--bridge {
     background-color: #eeeeee;
   }
+
+  &--home {
+    background: url(../../img/home.svg) no-repeat 20px 26px;
+    padding-top: 26px;
+  }
+
+  &--food {
+    background: url(../../img/food.svg) no-repeat 20px 26px;
+    padding-top: 26px;
+  }
+
+  &--gift {
+    background: url(../../img/gift.svg) no-repeat 20px 26px;
+    padding-top: 26px;
+    margin-bottom: 56px;
+  }
+}
+
+.advantages-content__item--home .advantages-content__title,
+.advantages-content__item--home .advantages-content__description,
+.advantages-content__item--food .advantages-content__title,
+.advantages-content__item--food .advantages-content__description,
+.advantages-content__item--gift .advantages-content__title,
+.advantages-content__item--gift .advantages-content__description {
+  padding-left: 46px;
+}
+
+.advantages-content__item--home .advantages-content__title,
+.advantages-content__item--food .advantages-content__title,
+.advantages-content__item--gift .advantages-content__title {
+  margin-top: 8px;
 }
 
 .advantages-content__wrapper {
@@ -86,6 +117,7 @@
 .advantages-content__images {
   object-fit: cover;
   width: 320px;
+  display: block;
 
   @media (min-width: 768px) {
     width: 100%;
