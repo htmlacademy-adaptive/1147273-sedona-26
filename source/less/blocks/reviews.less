@@ -59,6 +59,7 @@
   padding: 16px;
   background-color: #F2F2F2;
   border: none;
+  position: relative;
 }
 
 .reviews-form__field::placeholder {
@@ -78,6 +79,9 @@
   padding: 16px;
   background-color: #F2F2F2;
   border: none;
+  position: relative;
+
+
 }
 
 .reviews-form__field-contact::placeholder {
@@ -148,8 +152,101 @@
 .reviews-form__wrapper-field {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+
+  &--phone {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-image: url("../../img/phone.png");
+      background-repeat: no-repeat;
+      right: 0;
+      bottom: 0;
+      z-index: 55;
+    }
+  }
+
+    &--mail {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-image: url("../../img/mail.png");
+      background-repeat: no-repeat;
+      right: 0;
+      bottom: 0;
+      z-index: 55;
+    }
+  }
+}
+
+.reviews-form__fieldset {
+  border: none;
+  border-bottom: #E5E5E5 solid 1px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.reviews-form__fieldset-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews-form__fieldset-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews-form__control {
+  position: relative;
+  padding-left: 62px;
+}
+
+.reviews-form__input[type="radio"]:checked+.reviews-form__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.reviews-form__input[type="checkbox"]:checked+.reviews-form__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/tick.png");
+  border-radius: 50%;
+}
+
+.reviews-form__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #F2F2F2;
+  left: 0;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &--check {
+    border-radius: 4px;
+  }
+}
+
+.reviews-form__fieldset-item:not(:last-child) {
+  margin-bottom: 36px;
 }
