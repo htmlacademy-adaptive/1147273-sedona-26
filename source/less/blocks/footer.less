@@ -2,7 +2,18 @@
   font-family: "PT Sans", "Arial", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 28px 80px 22px 80px;
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: calc(60px*2);
+    padding-right: calc(60px*2);
+  }
 }
 
 .footer__wripper {
