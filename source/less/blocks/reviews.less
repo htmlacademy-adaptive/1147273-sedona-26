@@ -1,14 +1,24 @@
-.reviews {
+.reviews__header {
   padding-left: 20px;
   padding-right: 20px;
-}
+  padding-bottom: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  border-bottom: #E5E5E5 solid 1px;
 
-.reviews__header {
-  margin-bottom: 28px;
+  @media (min-width: 768px) {
+    border-bottom: none;
+  }
 }
 
 .reviews__title {
   margin-bottom: 24px;
+}
+
+.reviews-form__title {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .reviews__slogan {
@@ -46,6 +56,9 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  padding: 16px;
+  background-color: #F2F2F2;
+  border: none;
 }
 
 .reviews-form__field::placeholder {
@@ -62,6 +75,9 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  padding: 16px;
+  background-color: #F2F2F2;
+  border: none;
 }
 
 .reviews-form__field-contact::placeholder {
@@ -117,5 +133,23 @@
 }
 
 .reviews-form__inner {
-  width: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 24px;
+  border-bottom: #E5E5E5 solid 1px;
+}
+
+.reviews-form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-form__wrapper-field {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
