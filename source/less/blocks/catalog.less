@@ -1,24 +1,45 @@
 .catalog__header {
-  padding-bottom: 27px;
-  margin-bottom: 17px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-bottom: 44px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-bottom: #E5E5E5 solid 1px;
+
+  @media (min-width: 768px) {
+    border-bottom: none;
+  }
 }
 
 .catalog__img {
   width: 100%;
   object-fit: cover;
+  display: block;
+
+  @media (min-width: 768px) {
+    height: 267px;
+  }
+
+  &--wide {
+    height: 280px;
+
+    @media (min-width: 768px) {
+      height: 400px;
+    }
+  }
 }
 
 .catalog__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 324px 324px;
-    grid-template-rows: 400px 347px 347px;
+    grid-template-rows: 480px 347px 347px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -26,7 +47,7 @@
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 400px 347px;
+    grid-template-rows: 400px 267px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -92,4 +113,34 @@
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.catalog__item-title {
+  display: block;
+}
+
+.catalog__item-autor {
+  display: block;
+}
+
+.catalog__info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+
+  @media (min-width:768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px 20px;
+    background-color: #F2F2F2;
+  }
+}
+
+.catalog__info-inner {
+  margin-bottom: 11px;
+
+  @media (min-width:768px) {
+    margin-bottom: 0;
+  }
 }
