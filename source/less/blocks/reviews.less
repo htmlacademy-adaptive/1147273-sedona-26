@@ -65,8 +65,11 @@
     box-sizing: border-box;
     width: 280px;
   }
-}
 
+  @media (min-width:1200px) {
+    width: 430px;
+  }
+}
 .reviews-form__field::placeholder {
   font-weight: 700;
   font-size: 18px;
@@ -89,6 +92,10 @@
   @media (min-width:768px) {
     box-sizing: border-box;
     width: 280px;
+  }
+
+  @media (min-width:1200px) {
+    width: 430px;
   }
 }
 
@@ -121,6 +128,7 @@
   height: 150px;
   width: 100%;
   margin-bottom: 56px;
+  resize: none;
 
   @media (min-width:768px) {
     height: 160px;
@@ -146,6 +154,11 @@
     margin-bottom: 64px;
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  @media (min-width:1200px) {
+    padding-left: 216px;
+    padding-right: 216px;
   }
 }
 
@@ -191,6 +204,11 @@
     padding-right: 60px;
     margin-bottom: 48px;
   }
+
+  @media (min-width:1200px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .reviews-form__inner {
@@ -214,6 +232,10 @@
       padding-right: 43px;
       padding-bottom: 15px;
       border-right: #E5E5E5 solid 1px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-right: 50px;
     }
   }
 }
@@ -278,6 +300,11 @@
     padding-right: 134px;
   }
 
+  @media (min-width:1200px) {
+    padding-left: 173px;
+    padding-right: 173px;
+  }
+
   &--another {
 
     @media (min-width:768px) {
@@ -285,11 +312,21 @@
       padding-left: 144px;
       padding-right: 144px;
     }
+
+    @media (min-width:1200px) {
+
+      padding-left: 164px;
+      padding-right: 164px;
+    }
   }
 }
 
 .reviews-form__fieldset--another .reviews-form__fieldset-item {
   width: 224px;
+
+  @media (min-width:1200px) {
+    width: auto;
+  }
 }
 
 .reviews-form__fieldset-title {
