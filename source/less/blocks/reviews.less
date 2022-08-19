@@ -4,7 +4,7 @@
   padding-bottom: 28px;
   margin-bottom: 24px;
   text-align: center;
-  border-bottom: #E5E5E5 solid 1px;
+  border-bottom: #e5e5e5 solid 1px;
 
   @media (min-width: 768px) {
     border-bottom: none;
@@ -57,19 +57,20 @@
   line-height: 26px;
   color: #000000;
   padding: 16px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   position: relative;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     box-sizing: border-box;
     width: 280px;
   }
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     width: 430px;
   }
 }
+
 .reviews-form__field::placeholder {
   font-weight: 700;
   font-size: 18px;
@@ -85,16 +86,16 @@
   line-height: 26px;
   color: #000000;
   padding: 16px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   position: relative;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     box-sizing: border-box;
     width: 280px;
   }
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     width: 430px;
   }
 }
@@ -123,15 +124,16 @@
   line-height: 26px;
   color: #000000;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 16px;
   height: 150px;
   width: 100%;
   margin-bottom: 56px;
   resize: none;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     height: 160px;
+    margin-bottom: 48px;
   }
 }
 
@@ -140,7 +142,7 @@
   padding: 18px 33px 14px 33px;
   margin-bottom: 3px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     width: 324px;
     box-sizing: border-box;
   }
@@ -150,22 +152,24 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     margin-bottom: 64px;
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     padding-left: 216px;
     padding-right: 216px;
   }
 }
 
 .reviews-form__wrapper-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .title-form__field-area::placeholder {
@@ -188,7 +192,7 @@
   text-align: right;
   margin-bottom: 24px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     margin-bottom: 0;
   }
 }
@@ -205,7 +209,7 @@
     margin-bottom: 48px;
   }
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -216,7 +220,7 @@
   padding-right: 20px;
   padding-bottom: 30px;
   margin-bottom: 24px;
-  border-bottom: #E5E5E5 solid 1px;
+  border-bottom: #e5e5e5 solid 1px;
 
   @media (min-width: 768px) {
     padding-left: 0;
@@ -227,11 +231,10 @@
   }
 
   &--border-right {
-
     @media (min-width: 768px) {
       padding-right: 43px;
       padding-bottom: 15px;
-      border-right: #E5E5E5 solid 1px;
+      border-right: #e5e5e5 solid 1px;
     }
 
     @media (min-width: 1200px) {
@@ -268,7 +271,7 @@
     }
   }
 
-    &--mail {
+  &--mail {
     &::after {
       content: "";
       position: absolute;
@@ -285,46 +288,23 @@
 
 .reviews-form__fieldset {
   border: none;
-  border-bottom: #E5E5E5 solid 1px;
-  padding-right: 0;
-  padding-left: 0;
+  border-bottom: #e5e5e5 solid 1px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 24px;
   margin-bottom: 24px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     padding: 0;
     border: none;
-    padding-left: 69px;
-    padding-right: 134px;
-  }
-
-  @media (min-width:1200px) {
-    padding-left: 173px;
-    padding-right: 173px;
-  }
-
-  &--another {
-
-    @media (min-width:768px) {
-
-      padding-left: 144px;
-      padding-right: 144px;
-    }
-
-    @media (min-width:1200px) {
-
-      padding-left: 164px;
-      padding-right: 164px;
-    }
+    margin-bottom: 56px;
   }
 }
 
 .reviews-form__fieldset--another .reviews-form__fieldset-item {
   width: 224px;
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     width: auto;
   }
 }
@@ -332,6 +312,32 @@
 .reviews-form__fieldset-title {
   text-align: center;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    width: 272px;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 648px;
+      height: 1px;
+      position: absolute;
+      background-color: #dbdbdb;
+      bottom: 50%;
+      z-index: -5;
+      left: -145px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &::before {
+      width: 960px;
+      left: -302px;
+    }
+  }
 }
 
 .reviews-form__fieldset-list {
@@ -339,10 +345,30 @@
   padding: 0;
   margin: 0;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 96px;
+    padding-right: 134px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 173px;
+    padding-right: 173px;
+  }
+}
+
+.reviews-form__fieldset--another .reviews-form__fieldset-list {
+  @media (min-width: 768px) {
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 164px;
+    padding-right: 164px;
   }
 }
 
@@ -351,7 +377,7 @@
   padding-left: 62px;
 }
 
-.reviews-form__input[type="radio"]:checked+.reviews-form__mark::before {
+.reviews-form__input[type="radio"]:checked + .reviews-form__mark::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -362,7 +388,7 @@
   border-radius: 50%;
 }
 
-.reviews-form__input[type="checkbox"]:checked+.reviews-form__mark::before {
+.reviews-form__input[type="checkbox"]:checked + .reviews-form__mark::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -377,7 +403,7 @@
   position: absolute;
   width: 46px;
   height: 46px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   left: 0;
   border-radius: 50%;
   top: 50%;
