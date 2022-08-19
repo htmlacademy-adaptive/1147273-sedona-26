@@ -59,7 +59,7 @@
             >
 
             <div class="reviews-form__container">
-              <div class="reviews-form__inner">
+              <div class="reviews-form__inner reviews-form__inner--border-right">
                 <b class="title reviews-form__title">Представьтесь:</b>
                 <div class="reviews-form__wrapper">
                   <div class="reviews-form__wrapper-field">
@@ -181,7 +181,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="reviews-form__fieldset">
+              <fieldset class="reviews-form__fieldset reviews-form__fieldset--another">
                 <legend class="title reviews-form__fieldset-title">
                   посещенные достопримечательности:
                 </legend>
@@ -241,7 +241,8 @@
               </fieldset>
 
               <b class="title reviews-form__title">Опишите свои эмоции:</b>
-              <textarea
+              <div class="reviews-form__wrapper-textarea">
+                <textarea
                 class="title-form__field-area"
                 name="detail"
                 id="detail"
@@ -249,12 +250,15 @@
                 rows="10"
                 placeholder="Опишите подробно все свои восторги "
               ></textarea>
-              <button class="button reviews-form__button">
-                ОТПРАВИТЬ ОТЗЫВ
-              </button>
-              <span class="reviews-form__necessarily"
-                >* — обязательные поля</span
-              >
+              <div class="reviews-form__wrapper-flex">
+                <button class="button reviews-form__button">
+                  ОТПРАВИТЬ ОТЗЫВ
+                </button>
+                <span class="reviews-form__necessarily"
+                  >* — обязательные поля</span
+                >
+              </div>
+              </div>
             </form>
           </div>
         </div>
