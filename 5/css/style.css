@@ -151,33 +151,19 @@
     display: inline-block;
   }
 }
-.advantages-content__item--home .advantages-content__title,
-.advantages-content__item--home .advantages-content__description,
-.advantages-content__item--food .advantages-content__title,
-.advantages-content__item--food .advantages-content__description,
-.advantages-content__item--gift .advantages-content__title,
-.advantages-content__item--gift .advantages-content__description {
+.advantages-content__item--padding {
   padding-left: 46px;
 }
 @media (min-width: 768px) {
-  .advantages-content__item--home .advantages-content__title,
-  .advantages-content__item--home .advantages-content__description,
-  .advantages-content__item--food .advantages-content__title,
-  .advantages-content__item--food .advantages-content__description,
-  .advantages-content__item--gift .advantages-content__title,
-  .advantages-content__item--gift .advantages-content__description {
+  .advantages-content__item--padding {
     padding-left: 0;
   }
 }
-.advantages-content__item--home .advantages-content__title,
-.advantages-content__item--food .advantages-content__title,
-.advantages-content__item--gift .advantages-content__title {
+.advantages-content__title--padding {
   margin-top: 8px;
 }
 @media (min-width: 768px) {
-  .advantages-content__item--home .advantages-content__title,
-  .advantages-content__item--food .advantages-content__title,
-  .advantages-content__item--gift .advantages-content__title {
+  .advantages-content__title--padding {
     margin-top: 26px;
   }
 }
@@ -726,7 +712,6 @@
   z-index: 10;
 }
 .map {
-  margin-bottom: 10px;
   max-width: 320px;
 }
 @media (min-width: 768px) {
@@ -743,6 +728,9 @@
   object-fit: cover;
   width: 100%;
   display: block;
+}
+.map__size {
+  margin-bottom: 10px;
 }
 .page-body {
   box-sizing: border-box;
@@ -841,11 +829,6 @@
 .reviews__title {
   margin-bottom: 24px;
 }
-.reviews-form__title {
-  display: block;
-  margin-bottom: 20px;
-  text-align: center;
-}
 .reviews__slogan {
   font-style: normal;
   font-weight: 400;
@@ -854,6 +837,11 @@
   text-transform: uppercase;
   color: #333333;
   margin: 0;
+}
+.reviews-form__title {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .reviews-form__small {
   font-style: normal;
