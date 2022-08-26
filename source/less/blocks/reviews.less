@@ -1,10 +1,14 @@
-.reviews {
+.reviews__header {
   padding-left: 20px;
   padding-right: 20px;
-}
+  padding-bottom: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  border-bottom: #e5e5e5 solid 1px;
 
-.reviews__header {
-  margin-bottom: 28px;
+  @media (min-width: 768px) {
+    border-bottom: none;
+  }
 }
 
 .reviews__title {
@@ -19,103 +23,4 @@
   text-transform: uppercase;
   color: #333333;
   margin: 0;
-}
-
-.reviews-form__small {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.reviews-form__small-contact {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.reviews-form__field {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.reviews-form__field::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.reviews-form__field-contact {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.reviews-form__field-contact::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.reviews-form__label {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.title-form__field-area {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.title-form__field-area::placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.reviews-form__necessarily {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: rgba(51, 51, 51, 0.6);
-}
-
-.reviews-form__container {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: initial;
-    justify-content: space-between;
-  }
-}
-
-.reviews-form__inner {
-  width: 250px;
 }

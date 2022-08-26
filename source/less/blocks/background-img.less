@@ -1,10 +1,42 @@
 .background-img {
   background-image: url("../../img/background-forest.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  margin-bottom: 32px;
+  background-position: center top;
   padding-top: 90px;
-  padding-bottom: 165px;
+  padding-bottom: 85px;
+
+  &--catalog {
+    padding-top: 52px;
+    padding-bottom: 67px;
+    background-position: center bottom;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &--position {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../img/intro-triangle.svg.png") no-repeat bottom;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    @media (min-width: 768px) {
+      background: url("../../img/intro-triangle-tablet.svg") no-repeat bottom;
+      bottom: -1px;
+    }
+
+    @media (min-width: 1200px) {
+      background: url("../../img/intro-triangle-desktop.svg") no-repeat bottom;
+    }
+  }
 }
 
 .background-img__hero {
