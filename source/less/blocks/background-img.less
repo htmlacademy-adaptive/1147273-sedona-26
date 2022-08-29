@@ -2,7 +2,7 @@
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   padding-top: 90px;
-  padding-bottom: 85px;
+  padding-bottom: 81px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/back-mobile@2x.jpg");
@@ -13,6 +13,8 @@
   @media (min-width: 768px) {
     background-image: url("../../img/back-tablet.jpg");
     background-position: center -22px;
+    padding-top: 77px;
+    padding-bottom: 64px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/back-tablet@2x.jpg");
@@ -29,6 +31,7 @@
       background-size: 1200px auto;
     }
   }
+
   &--catalog {
     padding-top: 52px;
     padding-bottom: 67px;
@@ -66,4 +69,10 @@
 .background-img__hero {
   object-fit: contain;
   width: 100%;
+  height: 214px;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 350px;
+  }
 }
