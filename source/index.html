@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="manifest" href="manifest.json">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -34,13 +38,16 @@
     <main class="main-container">
       <h1 class="visually-hidden">Седона - небольшой городок в аризоне</h1>
       <div class="background-img background-img--position">
-        <img
-        class="background-img__hero"
-          src="./img/welcome.svg"
-          width="282"
-          height="214"
-          alt="Добро пожаловать в Седону."
-        />
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/welcome-media.svg">
+          <img
+          class="background-img__hero"
+            src="./img/welcome.svg"
+            width="282"
+            height="214"
+            alt="Добро пожаловать в Седону."
+          />
+        </picture>
       </div>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -63,13 +70,17 @@
                     СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                   </p>
                 </div>
-                <img
-                class="advantages-content__images"
-                src="./img/advantages-sity.jpg"
-                width="800"
-                height="384"
-                alt="Городок."
-              />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/advantages-sity__desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/advantages-sity__tablet.jpg">
+                  <img
+                  class="advantages-content__images"
+                  src="./img/advantages-sity.jpg"
+                  width="320"
+                  height="260"
+                  alt="Городок."
+                />
+                </picture>
               </li>
               <li class="advantages-content__item advantages-content__item--home">
                 <h4 class="title advantages-content__title advantages-content__item--padding advantages-content__title--padding">Жилье</h4>
@@ -97,13 +108,17 @@
                     Да, по нему можно пройти! Если вы осмелитесь, конечно
                   </p>
                 </div>
-                <img
-                class="advantages-content__images"
-                src="./img/advantages-bridge.jpg"
-                width="800"
-                height="384"
-                alt="Мост дьявола."
-              />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/advantages-bridge__desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/advantages-bridge__tablet.jpg">
+                  <img
+                  class="advantages-content__images"
+                  src="./img/advantages-bridge.jpg"
+                  width="320"
+                  height="260"
+                  alt="Мост дьявола."
+                />
+                </picture>
               </li>
                 <li class="advantages-content__item advantages-content__item--bridge">
                   <h4 class="title advantages-content__title">НЕБОЛЬШАЯ <br class="advantages-content__end-title"> ПЛОЩАДЬ</h4>
