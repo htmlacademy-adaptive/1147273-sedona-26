@@ -11,21 +11,23 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import {deleteAsync as del} from 'del';
 
 // Styles
-
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
+  .pipe(plumber())
+  .pipe(less())
+  .pipe(postcss([
+  autoprefixer(),
+  csso()
+  ]))
+  .pipe(rename('style.min.css'))
+  .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+  .pipe(browser.stream());
+  }
+
+
 
 // HTML
 const html = () => {
@@ -41,7 +43,7 @@ const scripts = () => {
   .pipe(gulp.dest('build/js'));
 }
 
-// Iamges
+// Images
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
@@ -92,8 +94,8 @@ const copy = (done) => {
   }
 
 // Clean
-const clean = () => {
-  return del('build');
+const clean = async() => {
+  return await del (['build']);
   };
 
 // Server
@@ -119,7 +121,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
