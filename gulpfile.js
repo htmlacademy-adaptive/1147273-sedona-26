@@ -27,8 +27,6 @@ export const styles = () => {
   .pipe(browser.stream());
   }
 
-
-
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
@@ -94,7 +92,7 @@ const copy = (done) => {
   }
 
 // Clean
-const clean = async() => {
+export const clean = async() => {
   return await del (['build']);
   };
 
