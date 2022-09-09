@@ -1,0 +1,119 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; /* см. ниже */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 90;
+}
+
+.popup__window {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 320px;
+  max-width: 100%;
+  height: 280px;
+  padding: 45px 42px 35px 41px;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transform: scale(1);
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 400px;
+    height: 312px;
+  }
+}
+
+.popup__title {
+  display: block;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.popup__text {
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  display: block;
+  width: 240px;
+
+  @media (min-width: 768px) {
+    width: 320px;
+  }
+}
+
+.popup__button {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 63px 14px 63px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  @media (min-width: 768px) {
+    padding: 18px 106px 14px 106px;
+  }
+}
+
+.popup__window-access {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 320px;
+  max-width: 100%;
+  height: 278px;
+  padding-top: 45px;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transform: scale(1);
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 640px;
+    height: 303px;
+  }
+}
+
+.popup__text-success {
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  display: block;
+  width: 245px;
+
+  @media (min-width: 768px) {
+    width: 470px;
+  }
+}
+
+.popup__button-inner {
+  display: block;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: 768px) {
+    padding: 44px 91px;
+  }
+}
+
+.popup__button-succes {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 61px 14px 61px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  @media (min-width: 768px) {
+    padding: 18px 140px 14px 140px;
+  }
+}
