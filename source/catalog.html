@@ -67,8 +67,6 @@
     <main class="main-container-catalog">
       <h1 class="visually-hidden">Каталог</h1>
       <div class="background-img background-img--catalog">
-        <picture>
-          <source media="(min-width: 768px)" srcset="./img/sedona__tablet.svg">
           <img
             class="background-img__hero background-img__hero--catalog"
             src="./img/sedona.svg"
@@ -76,10 +74,9 @@
             height="39"
             alt="Добро пожаловать в Седону."
           />
-        </picture>
       </div>
       <section class="catalog">
-        <div class="catalog-wrapper">
+        <div class="catalog__wrapper">
           <header class="catalog__header">
             <h2 class="title catalog__title">Фото и видео</h2>
             <p class="catalog__slogan">
@@ -90,18 +87,20 @@
           <div class="catalog__content">
             <ul class="catalog__list">
               <li class="catalog__item catalog__item--wide">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/catalog/desktop/spaces__desktop.jpg 1x, ./img/catalog/desktop/spaces__desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/tablet/spaces__tablet.jpg 1x, ./img/catalog/tablet/spaces__tablet@2x.jpg 2x">
-                  <img
-                  class="catalog__img catalog__img--wide"
-                  src="./img/catalog/spaces.jpg"
-                  srcset="./img/catalog/spaces@2x.jpg 2x"
-                  width="280"
-                  height="280"
-                  alt="Дорога в степи."
-                />
-                </picture>
+                <a>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desktop/spaces__desktop.jpg 1x, ./img/catalog/desktop/spaces__desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/tablet/spaces__tablet.jpg 1x, ./img/catalog/tablet/spaces__tablet@2x.jpg 2x">
+                    <img
+                    class="catalog__img catalog__img--wide"
+                    src="./img/catalog/spaces.jpg"
+                    srcset="./img/catalog/spaces@2x.jpg 2x"
+                    width="280"
+                    height="280"
+                    alt="Дорога в степи."
+                  />
+                  </picture>
+                </a>
                 <div class="catalog__info">
                   <div class="catalog__info-inner">
                     <b class="catalog__item-title">неродные просторы</b>
@@ -116,18 +115,20 @@
                 </div>
               </li>
               <li class="catalog__item">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/catalog/desktop/vegetation__desktop.jpg 1x, ./img/catalog/desktop/vegetation__desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/tablet/vegetation__tablet.jpg 1x, ./img/catalog/tablet/vegetation__tablet@2x.jpg 2x">
-                  <img
-                  class="catalog__img"
-                  src="./img/catalog/vegetation.jpg"
-                  srcset="./img/catalog/vegetation@2x.jpg 2x"
-                  width="280"
-                  height="280"
-                  alt="Растение."
-                  />
-                </picture>
+                <a>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desktop/vegetation__desktop.jpg 1x, ./img/catalog/desktop/vegetation__desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/tablet/vegetation__tablet.jpg 1x, ./img/catalog/tablet/vegetation__tablet@2x.jpg 2x">
+                    <img
+                    class="catalog__img"
+                    src="./img/catalog/vegetation.jpg"
+                    srcset="./img/catalog/vegetation@2x.jpg 2x"
+                    width="280"
+                    height="280"
+                    alt="Растение."
+                    />
+                  </picture>
+                </a>
                 <div class="catalog__info">
                   <div class="catalog__info-inner">
                     <b class="catalog__item-title">Местная растительность</b>
@@ -142,6 +143,7 @@
                 </div>
               </li>
               <li class="catalog__item">
+                <a>
                 <picture>
                   <source media="(min-width: 1200px)" srcset="./img/catalog/desktop/road__desktop.jpg 1x, ./img/catalog/desktop/road__desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/catalog/tablet/road__tablet.jpg 1x, ./img/catalog/tablet/road__tablet@2x.jpg 2x">
@@ -154,6 +156,7 @@
                   alt="Дорога в горах."
                 />
                 </picture>
+                </a>
                 <div class="catalog__info catalog__info--background-color">
                   <div class="catalog__info-inner">
                     <b class="catalog__item-title">Дорога на север</b>
@@ -168,22 +171,23 @@
                 </div>
               </li>
               <li class="catalog__item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desktop/bridge__desktop.webp 1x, ./img/catalog/desktop/bridge__desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/tablet/bridge__tablet.webp 1x, ./img/catalog/tablet/bridge__tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/catalog/bridge.webp 1x, ./img/catalog/bridge@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="./img/catalog/desktop/bridge__desktop.jpg 1x, ./img/catalog/desktop/bridge__desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/catalog/tablet/bridge__tablet.jpg 1x, ./img/catalog/tablet/bridge__tablet@2x.jpg 2x">
-                  <img
-                  class="catalog__img"
-                  src="./img/catalog/bridge.jpg"
-                  srcset="./img/catalog/bridge@2x.jpg 2x"
-                  width="280"
-                  height="280"
-                  alt="Мост дьявола."
-                />
-                </picture>
-
+                <a>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/desktop/bridge__desktop.webp 1x, ./img/catalog/desktop/bridge__desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/tablet/bridge__tablet.webp 1x, ./img/catalog/tablet/bridge__tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/bridge.webp 1x, ./img/catalog/bridge@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="./img/catalog/desktop/bridge__desktop.jpg 1x, ./img/catalog/desktop/bridge__desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/tablet/bridge__tablet.jpg 1x, ./img/catalog/tablet/bridge__tablet@2x.jpg 2x">
+                    <img
+                    class="catalog__img"
+                    src="./img/catalog/bridge.jpg"
+                    srcset="./img/catalog/bridge@2x.jpg 2x"
+                    width="280"
+                    height="280"
+                    alt="Мост дьявола."
+                  />
+                  </picture>
+                </a>
                 <div class="catalog__info">
                   <div class="catalog__info-inner">
                     <b class="catalog__item-title">Мост дьявола</b>

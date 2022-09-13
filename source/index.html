@@ -64,8 +64,6 @@
     <main class="main-container">
       <h1 class="visually-hidden">Седона - небольшой городок в аризоне</h1>
       <div class="background-img background-img--position">
-        <picture>
-          <source media="(min-width: 768px)" srcset="./img/welcome-media.svg">
           <img
           class="background-img__hero"
             src="./img/welcome.svg"
@@ -73,7 +71,6 @@
             height="214"
             alt="Добро пожаловать в Седону."
           />
-        </picture>
       </div>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -109,20 +106,20 @@
                 </picture>
               </li>
               <li class="advantages-content__item advantages-content__item--home">
-                <h4 class="title advantages-content__title advantages-content__item--padding advantages-content__title--padding">Жилье</h4>
-                <p class="advantages-content__description advantages-content__item--padding">
+                <h4 class="title advantages-content__title advantages-content__title--padding advantages-content__title--margin">Жилье</h4>
+                <p class="advantages-content__description advantages-content__description--padding">
                   Рекомендуем пожить в настоящем мотеле, все <br class="advantages-content__end"> как в кино!
                 </p>
               </li>
               <li class="advantages-content__item advantages-content__item--food">
-                <h4 class="title advantages-content__title advantages-content__item--padding advantages-content__title--padding">ЕДА</h4>
-                <p class="advantages-content__description advantages-content__item--padding">
+                <h4 class="title advantages-content__title advantages-content__title--padding advantages-content__title--margin">ЕДА</h4>
+                <p class="advantages-content__description advantages-content__description--padding">
                   Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <br class="advantages-content__end"> Вы НЕ разочаруетесь!
                 </p>
               </li>
               <li class="advantages-content__item advantages-content__item--gift">
-                <h4 class="title advantages-content__title advantages-content__item--padding advantages-content__title--padding">СУВЕНИРЫ</h4>
-                <p class="advantages-content__description advantages-content__item--padding">
+                <h4 class="title advantages-content__title advantages-content__title--padding advantages-content__title--margin">СУВЕНИРЫ</h4>
+                <p class="advantages-content__description advantages-content__description--padding">
                   Не только китайского, но <br class="advantages-content__end"> и местного производства!
                 </p>
               </li>
@@ -179,14 +176,14 @@
             Укажите предполагаемые даты поездки, <br class="search-hotel__aside--end"> и мы покажем вам
             лучшие предложения гостиниц в седоне
           </p>
-          <button class="button button__search-hotel" type="button">
+          <a class="button button__search-hotel" type="button">
             Найти гостиницу
-          </button>
+          </a>
         </div>
       </section>
       <section class="map map__size">
         <h2 class="visually-hidden">Карта</h2>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9eb61a4079381242561355306c628303941dc9db711f75f2767c8ba79fa65656&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9eb61a4079381242561355306c628303941dc9db711f75f2767c8ba79fa65656&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
       </section>
     </main>
     <footer class="footer">
@@ -194,7 +191,7 @@
         <div class="footer__hashtag-inner">
           <b class="title footer__hashtag-text">#visitSEDONA</b>
         </div>
-        <div class="footer__social-inner social">
+        <div class="social footer__social-inner">
           <ul class="social__list">
             <li class="social__item">
               <a
