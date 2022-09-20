@@ -3,6 +3,11 @@
   text-align: center;
   padding-right: 12px;
   padding-left: 12px;
+
+  @media(min-width: 768px) {
+    font-size: 21px;
+    margin-bottom: 27px;
+  }
 }
 
 .advantages__intro {
@@ -12,16 +17,23 @@
   text-transform: uppercase;
   color: #333333;
   margin: 0;
-  margin-bottom: 32px;
   text-align: center;
 }
 
 .advantages__header {
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
+  margin-bottom: 35px;
 
   @media (min-width: 768px) {
     width: 520px;
     margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 46px;
   }
 
   &::before {
@@ -35,7 +47,7 @@
     bottom: -33%;
 
     @media (min-width: 768px) {
-      background: none;
+      display: none;
     }
   }
 }
