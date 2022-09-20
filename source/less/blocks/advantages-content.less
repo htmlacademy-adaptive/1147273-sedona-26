@@ -25,7 +25,7 @@
     padding: 26px 35px 22px 35px;
 
     @media (min-width: 768px) {
-      padding: 42px 40px 42px 40px;
+      padding: 45px 40px 42px 40px;
     }
 
     &:not(:last-child) {
@@ -42,7 +42,7 @@
     padding-top: 26px;
 
     @media (min-width: 768px) {
-      padding-top: 131px;
+      padding-top: 162px;
       text-align: center;
       background-position: center 60px;
       background-size: 75px;
@@ -54,7 +54,7 @@
     padding-top: 26px;
 
     @media (min-width: 768px) {
-      padding-top: 131px;
+      padding-top: 162px;
       text-align: center;
       background-position: center 64px;
       background-size: 76px;
@@ -67,10 +67,11 @@
     margin-bottom: 52px;
 
     @media (min-width: 768px) {
-      padding-top: 131px;
+      padding-top: 162px;
       text-align: center;
       background-position: center 55px;
       background-size: 64px;
+      margin-bottom: 0;
     }
   }
 }
@@ -122,12 +123,23 @@
 .advantages-content__wrapper {
   padding: 39px 18px 37px 18px;
   text-align: center;
+
+  @media(min-width: 768px) {
+    padding: 43px 30px 41px 30px;
+  }
 }
 
 .advantages-content__title {
   margin-bottom: 16px;
 
+  @media(min-width: 768px) {
+    margin: 0;
+    font-size: 21px;
+  }
+
   &--meta-white {
+    font-size: 21px;
+    margin: 0;
     color: #ffffff;
     margin-bottom: 11px;
   }
@@ -174,7 +186,7 @@
   text-transform: uppercase;
   margin: 0;
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 23px;
 }
 
 .advantages-content__number {
@@ -185,6 +197,10 @@
   margin: 0;
   display: block;
   margin-bottom: 17px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages-content__images {
@@ -207,6 +223,7 @@
 
   @media (min-width: 768px) {
     padding-left: 0;
+    margin-bottom: 23px;
   }
 }
 
@@ -215,6 +232,7 @@
 
     @media (min-width: 768px) {
     padding-left: 0;
+    margin-bottom: 23px;
   }
 }
 
@@ -223,11 +241,8 @@
 
     @media (min-width: 768px) {
     padding-left: 0;
+    margin-bottom: 23px;
   }
-}
-
-.advantages-content__item--home .advantages-content__description--padding {
-
 }
 
 .advantages-content__item--food .advantages-content__description--padding {
