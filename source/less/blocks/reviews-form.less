@@ -2,6 +2,12 @@
   display: block;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    line-height: 26px;
+    font-size: 21px;
+    margin-bottom: 27px;
+  }
 }
 
 .reviews-form__small {
@@ -11,6 +17,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  padding-left: 16px;
 }
 
 .reviews-form__small-contact {
@@ -20,6 +27,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  padding-left: 16px;
 }
 
 .reviews-form__field {
@@ -124,7 +132,7 @@
   padding: 16px;
   height: 150px;
   width: 100%;
-  margin-bottom: 56px;
+  margin-bottom: 51px;
   resize: none;
   outline: none;
 
@@ -140,7 +148,7 @@
 
   @media (min-width: 768px) {
     height: 160px;
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
 }
 
@@ -201,6 +209,8 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -225,8 +235,8 @@
 .reviews-form__inner {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 24px;
+  padding-bottom: 36px;
+  margin-bottom: 27px;
   border-bottom: #e5e5e5 solid 1px;
 
   @media (min-width: 768px) {
@@ -298,8 +308,8 @@
   border-bottom: #e5e5e5 solid 1px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
+  padding-bottom: 34px;
+  margin-bottom: 26px;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -318,7 +328,7 @@
 
 .reviews-form__fieldset-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   @media (min-width: 768px) {
     width: 272px;
@@ -326,6 +336,8 @@
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
+    font-size: 21px;
+    line-height: 26px;
 
     &::before {
       content: "";
@@ -356,7 +368,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 18px;
     padding-left: 96px;
     padding-right: 134px;
   }
@@ -376,6 +388,12 @@
   @media (min-width: 1200px) {
     padding-left: 164px;
     padding-right: 164px;
+  }
+}
+
+.reviews-form__fieldset--another {
+  @media(min-width: 768px) {
+    margin-bottom: 16px;
   }
 }
 

@@ -1,6 +1,10 @@
 .search-hotel {
-  padding: 61px 18px 54px 18px;
+  padding: 43px 18px 50px 18px;
   text-align: center;
+
+  @media(min-width: 768px) {
+    padding: 61px 18px 54px 18px;
+  }
 }
 
 .search-hotel__question {
@@ -24,9 +28,13 @@
   text-transform: uppercase;
   color: #333333;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 32px;
   padding-left: 11px;
   padding-right: 11px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 43px;
+  }
 
   &--end {
     display: none;

@@ -32,17 +32,31 @@
     }
   }
 
-  &--catalog {
+  &--catalog-form {
     padding-top: 52px;
     padding-bottom: 67px;
     background-position: center bottom;
     position: relative;
     margin-bottom: 30px;
+
+    @media(min-width: 768px) {
+      padding-top: 95px;
+      padding-bottom: 113px;
+      margin-bottom: 67px;
+    }
   }
 
   &--position {
     position: relative;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 48px;
+    }
+
+    @media(min-width: 1200px) {
+      margin-bottom: 60px;
+    }
   }
 
   &::before {
@@ -76,7 +90,7 @@
     height: 350px;
   }
 
-  &--catalog {
+  &--catalog-form {
     height: 39px;
 
     @media (min-width: 768px) {
