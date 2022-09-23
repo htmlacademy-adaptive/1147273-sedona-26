@@ -55,18 +55,6 @@
   height: 177px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url("../../img/play.png") no-repeat center center;
-  }
-
   @media (min-width: 768px) {
     width: 648px;
     height: 500px;
@@ -75,11 +63,19 @@
 
   @media (min-width: 1200px) {
     width: 800px;
+    margin-bottom: 92px;
   }
 }
 
-.question__video {
-  @media(min-width: 1200px) {
-    margin-bottom: 92px;
-  }
+.question__video-play {
+  position: absolute;
+  border: none;
+  background: url("../../img/play.png") no-repeat center center;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

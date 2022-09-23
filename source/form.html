@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="form-page" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="./img/favicons/apple.png">
     <link rel="manifest" href="manifest.json">
   </head>
-  <body class="form-page__body">
+  <body class="page-body">
     <svg style="display: none;">
       <symbol viewBox="0 0 48 48" fill="none" id="vk">
         <rect class="social__svg" width="48" height="48" fill="currentColor"/>
@@ -86,9 +86,9 @@
               посещенных вами достопримечательностях
             </p>
           </header>
-          <div class="reviews-form__wrapper">
+          <div class="reviews-form">
             <form
-              class="reviews-form"
+              class="reviews-form__wrapper"
               action="https://echo.htmlacademy.ru/"
               method="get"
             >
@@ -150,7 +150,7 @@
                       >
                       <input
                         class="reviews-form__field-contact"
-                        type="text"
+                        type="number"
                         id="number"
                         placeholder="Введите телефон"
                       />
@@ -163,7 +163,7 @@
                       >
                       <input
                         class="reviews-form__field-contact"
-                        type="text"
+                        type="email"
                         id="mail"
                         placeholder="Введите e-mail"
                       />
@@ -322,13 +322,14 @@
         <div class="footer__hashtag-inner">
           <b class="title footer__hashtag-text">#visitSEDONA</b>
         </div>
-        <div class="footer__social-inner social">
+        <div class="social footer__social-inner">
           <ul class="social__list">
             <li class="social__item">
               <a
                 target="_blank"
                 href="https://vk.com/htmlacademy"
-                class="social__link">
+                class="social__link"
+                aria-label="Вконтакте.">
                 <svg width="48" height="48">
                   <use href="#vk"></use>
                   </svg>
@@ -339,7 +340,8 @@
               <a
                 target="_blank"
                 href="https://t.me/htmlacademy"
-                class="social__link">
+                class="social__link"
+                aria-label="Телеграмм.">
                 <svg width="48" height="48" >
                   <use href="#telegram"></use>
                 </svg>
@@ -351,6 +353,7 @@
                 target="_blank"
                 href="https://www.youtube.com/user/htmlacademyru"
                 class="social__link"
+                aria-label="Ютуб."
                 ><svg width="48" height="48">
                   <use href="#youtube"></use>
                   </svg>
@@ -365,7 +368,8 @@
             <a
               target="_blank"
               href="https://htmlacademy.ru/intensive/adaptive"
-              class="footer__copyright-link"><span class="footer__copyright-text">Разработано</span>
+              class="footer__copyright-link"
+              aria-label="Курс академии."><span class="footer__copyright-text">Разработано</span>
               <svg width="27" height="35">
                 <use href="#academy"></use>
               </svg>
