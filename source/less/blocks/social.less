@@ -13,16 +13,29 @@
   display: flex;
   width: 156px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social__link {
-  color: rgba(129, 179, 210, 1);
+  font-family: inherit;
+  background-color: #81b3d2;
+  color: #ffffff;
+  min-width: 48px;
+  min-height: 48px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
-    color: rgba(102, 158, 192, 1);
+    background-color: #669ec0;
   }
 
   &:active {
-    color: rgba(84, 150, 189, 1);
+    background-color: #5496bd;
   }
+}
+
+.social__link:active > .social__icon {
+  opacity: 0.3;
 }
