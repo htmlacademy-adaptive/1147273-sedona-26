@@ -194,13 +194,13 @@
 
   @media (min-width: 768px) {
     margin-bottom: 64px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: 1200px) {
-    padding-left: 216px;
-    padding-right: 216px;
+    padding-left: 96px;
+    padding-right: 96px;
   }
 }
 
@@ -246,14 +246,10 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
     margin-bottom: 48px;
   }
 
   @media (min-width: 1200px) {
-    padding-left: 120px;
-    padding-right: 120px;
     margin-bottom: 57px;
   }
 }
@@ -289,6 +285,16 @@
 .reviews-form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .reviews-form__wrapper-field {
@@ -339,8 +345,11 @@
 
   @media (min-width: 768px) {
     padding: 0;
-    border: none;
+    border-bottom: none;
     margin-bottom: 56px;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: solid 1px #dbdbdb;
   }
 
   @media (min-width: 1200px) {
@@ -361,32 +370,16 @@
   margin-bottom: 22px;
 
   @media (min-width: 768px) {
-    width: 272px;
+    width: 100%;
+    max-width: 320px;
     background-color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
     font-size: 21px;
     line-height: 26px;
+    margin: auto;
     margin-bottom: 22px;
-
-    &::before {
-      content: "";
-      width: 648px;
-      height: 1px;
-      position: absolute;
-      background-color: #dbdbdb;
-      bottom: 50%;
-      z-index: -5;
-      left: -145px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    &::before {
-      width: 960px;
-      left: -302px;
-    }
   }
 
   @media (min-width: 1200px) {
@@ -410,25 +403,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 18px;
-    padding-left: 96px;
-    padding-right: 134px;
+    padding-left: 35px;
+    padding-right: 72px;
   }
 
   @media (min-width: 1200px) {
-    padding-left: 173px;
-    padding-right: 173px;
+    padding-left: 53px;
+    padding-right: 53px;
   }
 }
 
 .reviews-form__fieldset--another .reviews-form__fieldset-list {
   @media (min-width: 768px) {
-    padding-left: 144px;
-    padding-right: 144px;
+    padding-left: 83px;
+    padding-right: 83px;
   }
 
   @media (min-width: 1200px) {
-    padding-left: 164px;
-    padding-right: 164px;
+    padding-left: 43px;
+    padding-right: 43px;
   }
 }
 
